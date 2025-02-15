@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reviews</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Reviews</h1>
+        <p>Share your thoughts with us!</p>
+        <div class="navlinks"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="menu .html">Menu</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+        <section class="submit-review">
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <label for="username">Your Name (Optional):</label>
+                <input type="text" id="username" name="username">
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                
+                <label for="reviewText">Your Review:</label>
+                <textarea id="reviewText" name="reviewText" placeholder="Write your review here..." required></textarea>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section class="reviews">
+            <h2>Latest Reviews</h2>
+        
+            <div class="review">
+                <p><strong>John Doe</strong> - ⭐⭐⭐⭐⭐</p>
+                <p>Great food, loved the ambiance!</p>
+            </div>
+
+            <div class="review">
+                <p><strong>Jane Smith</strong> - ⭐⭐⭐⭐</p>
+                <p>Excellent service, but the dessert could use improvement.</p>
+            </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Karamath Roti shop </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

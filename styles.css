@@ -1,0 +1,119 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   padding: 35px;
+   text-align: center;
+   background: #1abc9c;
+   color: rgb(255, 250, 250);
+   font-size: 30px;
+}
+
+.navlinks {
+   flex: 1; 
+   text-align: right;
+}
+
+.navlinks ul {
+   margin: 0;
+   padding: 0;
+}
+
+.navlinks ul li {
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position:relative;
+}
+
+.navlinks ul li a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 23px;
+   text-align: center;
+}
+
+.navlinks ul li::after {
+   content: '';
+   width: 0;
+   height: 2px;
+   background: rgb(242, 243, 242);
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.navlinks ul li:hover::after {
+   width: 100%;
+}
+
+.images {
+   display: flex;
+   justify-content: center; /* Center images horizontally */
+   gap: 25%; /* Space between images */
+   padding: 20px; /* Add some padding around images */
+   margin-top: 15%;
+}
+
+.container {
+   position: relative; /* Make this the reference for absolute positioning of overlay */
+}
+
+.images img {
+   max-width: 100%; /* Ensure images do not exceed the width of their container */
+   height: auto; /* Maintain aspect ratio */
+   width: 200px; /* Set a fixed width, adjust as necessary */
+}
+
+.images img:hover {
+   box-shadow: 0 0 2px 1px rgb(172, 172, 172);
+}
+
+.overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: green; 
+   overflow: hidden;
+   height: 100%; 
+   width: 0; 
+   transition: width 0.5s ease; 
+}
+
+.container:hover .overlay {
+   width: 100%; 
+}
+
+.text {
+   white-space: nowrap;
+   color: #ffffff;
+   font-size: 20px;
+   position: absolute;
+   overflow: hidden;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+}
+
+h2{
+   color: #000000;
+   font-size: 23px;
+   text-align: center;
+}
+.embedsite {
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   margin: 20px 0; 
+}
+
+iframe {
+   max-width: 100%; 
+   height: 450px; 
+   border-radius: 8px; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

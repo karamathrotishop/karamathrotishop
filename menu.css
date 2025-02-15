@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.navbbar {
+   flex: 1; 
+   text-align: center;
+}
+
+.navbbar ul {
+   margin: 0;
+   padding: 0;
+}
+
+.navbbar ul li {
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+
+.navbbar ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 13px;
+}
+
+.navbbar ul li::after {
+   content: '';
+   width: 0;
+   height: 2px;
+   background: yellow;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.navbbar ul li:hover::after {
+   width: 100%;
+}
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: green;
+}
+
+.menu {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid green;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.menu-section ul {
+    list-style: none;
+}
+
+.menu-section li {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-section h3 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.menu-section p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.menu-section span {
+    font-size: 1rem;
+    font-weight: bold;
+    color:green;
+}
