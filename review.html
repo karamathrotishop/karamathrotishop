@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Reviews</title>
+    <title>Customer Reviews</title>
     <link rel="stylesheet" href="review.css">
 </head>
 <body>
-    <header>
+
+    <header class="header">
         <h1>Customer Reviews</h1>
-        <p>Share your thoughts with us!</p>
-        <div class="navlinks"> 
+        <p>See what our customers have to say!</p>
+        <nav class="navlinks">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about us.html">About</a></li>
-                <li><a href="menu .html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="review.html">Review</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
-    
-        <section class="submit-review">
-            <h2>Submit Your Review</h2>
-            <form id="reviewForm">
-                <label for="username">Your Name (Optional):</label>
-                <input type="text" id="username" name="username">
-                
-                <label for="rating">Rating:</label>
-                <select id="rating" name="rating">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                
-                <label for="reviewText">Your Review:</label>
-                <textarea id="reviewText" name="reviewText" placeholder="Write your review here..." required></textarea>
-                
-                <button type="submit">Submit Review</button>
-            </form>
-        </section>
+    <main class="review-section">
+        <h2>Leave a Review</h2>
+        <form id="review-form" class="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
 
-        <section class="reviews">
-            <h2>Latest Reviews</h2>
-        
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+                <option value="">Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                <option value="3">⭐⭐⭐ (3/5)</option>
+                <option value="2">⭐⭐ (2/5)</option>
+                <option value="1">⭐ (1/5)</option>
+            </select>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" rows="4" placeholder="Write your review here..." required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <h2>Customer Reviews</h2>
+        <div id="reviews" class="reviews">
             <div class="review">
-                <p><strong>John Doe</strong> - ⭐⭐⭐⭐⭐</p>
-                <p>Great food, loved the ambiance!</p>
+                <h3>Sarah L.</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p>"Amazing food and great service! Will definitely come again."</p>
             </div>
-
             <div class="review">
-                <p><strong>Jane Smith</strong> - ⭐⭐⭐⭐</p>
-                <p>Excellent service, but the dessert could use improvement.</p>
+                <h3>David R.</h3>
+                <p class="rating">⭐⭐⭐⭐</p>
+                <p>"Loved the roti! Just wish the wait time was a little shorter."</p>
             </div>
-        </section>
+            <div class="review">
+                <h3>Priya M.</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p>"Best doubles I've ever had! Highly recommend this place."</p>
+            </div>
+        </div>
+    </main>
 
-    <footer>
-        <p>&copy; 2025 Karamath Roti shop </p>
-    </footer>
 
-    <script src="app.js"></script>
+
+    <script src="review.js"></script>
+
 </body>
 </html>
